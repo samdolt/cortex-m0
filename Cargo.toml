@@ -1,0 +1,13 @@
+[package]
+name = "cortex-m0"
+version = "0.1.0"
+authors = ["Samuel Dolt <samuel@dolt.ch>"]
+
+[dependencies]
+volatile-register = "0.1.2"
+
+[profile.dev]
+panic = "abort"
+
+[profile.release]
+panic = "abort"
